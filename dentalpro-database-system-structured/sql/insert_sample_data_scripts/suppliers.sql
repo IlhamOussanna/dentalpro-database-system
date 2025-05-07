@@ -1,0 +1,10 @@
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (1, 'Ivory Instruments Co.', 'Conn Duetschens', '981-996-5637', 'cduetschens0@nydailynews.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (2, 'Prime Dental Solutions', 'Babbette Reason', '350-170-4505', 'breason1@ox.ac.uk');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (3, 'SmileSource Supplies', 'Mahalia Trewhella', '471-329-1403', 'mtrewhella2@weebly.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (4, 'Toothline Medical', 'Lowell MacAne', '529-999-7368', 'lmacane3@state.gov');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (5, 'SmileSource Supplies', 'Lindi Lindman', '231-487-4907', 'llindman4@deliciousdays.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (6, 'Pearl Dental Equipments DentalEdge Global ProCare Dental Brands Crown Medical Systems Apex OralTech', 'Jandy Offa', '477-574-8689', 'joffa5@ted.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (7, 'Ivory Instruments Co.', 'Em Tommaseo', '771-986-3621', 'etommaseo6@pagesperso-orange.fr');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (8, 'OralTech Distributors', 'Erinna Crowcombe', '966-854-9415', 'ecrowcombe7@blogspot.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (9, 'Ivory Instruments Co.', 'Kellsie Vidloc', '490-976-7548', 'kvidloc8@baidu.com');
+insert into suppliers (supplier_id, supplier_name, contact_name, phone, email) values (10, 'Pearl Dental Equipments DentalEdge Global ProCare Dental Brands Crown Medical Systems Apex OralTech', 'Cirilo Worsham', '303-580-5828', 'cworsham9@parallels.com');

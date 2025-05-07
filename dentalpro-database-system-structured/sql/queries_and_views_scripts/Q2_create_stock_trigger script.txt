@@ -1,0 +1,27 @@
+
+-- Creating an audit table for question 2 to track stock levels at time of sale
+CREATE TABLE stock_audit (
+    audit_id SERIAL PRIMARY KEY,
+    stock_id INT,
+    quantity_in_stock INT,
+    audit_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Creating the trigger function
+CREATE FUNCTION log_stock_level()
+RETURNS trigger AS $$
+BEGIN
+    INSERT INTO stock_audit (stock_id, quantity_in_stock)
+    SELECT s.stock_id, s.quantity_in_stock
+    FROM stocks s
+    WHERE s.stock_id = NEW.stock_id;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Creating the trigger on order_items table
+CREATE TRIGGER after_order_item
+AFTER INSERT ON order_items
+FOR EACH ROW
+EXECUTE FUNCTION log_stock_level();
